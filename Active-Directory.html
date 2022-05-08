@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<head>
+  
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+ 
+
+</head>
+<body>
+<div id="header">
+  <img class="Logo" src="Content/WebElementsImages/Logo.png" onclick="location.href='index.html';"/>
+  <h2>Systemy Operacyjne i Administracja Systemami Operacyjnymi</h2>
+  <div id="WinLinuxBlock">  
+  </div>
+</div>
+
+<div class="separatorWhite">
+  <div class="Teoria" >
+    <svg class="imageLink" onclick="location.href='#teoria';"  width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      
+      <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+      <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+      <line x1="3" y1="6" x2="3" y2="19"></line>
+      <line x1="12" y1="6" x2="12" y2="19"></line>
+      <line x1="21" y1="6" x2="21" y2="19"></line>
+   </svg>
+   <h5>Teoria</h5>
+  </div>
+  <div class="Praktyka">
+    <svg class="imageLink" onclick="location.href='#praktyka';" width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      
+      <rect x="3" y="4" width="18" height="12" rx="1"></rect>
+      <line x1="7" y1="20" x2="17" y2="20"></line>
+      <line x1="9" y1="16" x2="9" y2="20"></line>
+      <line x1="15" y1="16" x2="15" y2="20"></line>
+    </svg>
+    <h5>Praktyka</h5>
+  </div>
+  <div class="Zadania" >
+    <svg class="imageLink" onclick="location.href='#zadania';"  width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+     
+      <rect x="5" y="3" width="14" height="18" rx="2"></rect>
+      <line x1="9" y1="7" x2="15" y2="7"></line>
+      <line x1="9" y1="11" x2="15" y2="11"></line>
+      <line x1="9" y1="15" x2="13" y2="15"></line>
+   </svg>
+   <h5>Zadania</h5>
+  </div>
+</div>
+<div id="teoria">
+  <div>
+    <svg class="Chapter" width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      
+      <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+      <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+      <line x1="3" y1="6" x2="3" y2="19"></line>
+      <line x1="12" y1="6" x2="12" y2="19"></line>
+      <line x1="21" y1="6" x2="21" y2="19"></line>
+    </svg>
+    <h5>Teoria</h5>
+    <article>
+      <p>Active Directory to microsoftowa implementacja protokołu sieciowego warstwy aplikacji LDAP (ang. Lightweight Directory Access Protocol). Protokół LDAP stosowany jest w tak zwanych usługach katalogowych. Usługa katalogowa to nic innego jak obszerna, hierarchiczna baz danych, zawierająca informacje o użytkownikach, grupach użytkowników, komputerach, a także zasobach sieciowych, działających w sieciach firmowych, gdzie pracują serwery microsoftowe. To nic innego jak zbiór informacji o użytkownikach sieci, ich uprawnieniach do różnego rodzaju zasobów, komputerach, na jakich pracują, konfiguracji tych komputerów i tak dalej.</p>
+      <br />
+      <p>Active Directory pozwala administratorom sieci, centralnie, z poziomu jednego komputera (odpowiednio skonfigurowanego serwera) zarządzać całym zbiorem użytkowników w sieci, określać ich uprawnienia do zasobów sieciowych, a także konfigurować komputery, na których pracują. To potężne narzędzie zdecydowanie ułatwia pracę administratora w sieciach, gdzie pracują dziesiątki użytkowników i komputerów. Na całość usług związanych z Active Directory składa się aż pięć elementów:</p>
+      <br />
+      <p>AD Domain Services.</p>
+      <p>AD Certificate Services.</p>
+      <p>AD Lightweight Directory Services.</p>
+      <p>AD Rights Management Services.</p>
+      <p>AD Federation Services.</p>
+      <br />
+      <hr>
+      <p><strong>Magazyn danych</strong></p>
+      <p>plik, przechowywany na dysku serwera, zawierający informacje o obiektach usługi katalogowej. Obiektem usługi katalogowej może być użytkownik, grupa, jednostka organizacyjna czy też komputer. Plik nosi nazwę NTDS.dit</p>
+      <hr>
+      <p><strong>Kontroler domeny</strong></p>
+      <p>serwer, na którym zainstalowano Active Directory, przechowujący kopię magazyny danych. Wyróżnić możemy kontrolery typu Global Catalog (katalog globalny), a także kontrolery tylko do odczytu - Read-Only Domain Controler oraz odczytu i zapisu – Writeable Domain Controler.</p>
+      <hr>
+      <p><strong>Domena</strong></p>
+      <p>obszar sieci, któremu przydzielono określone możliwości oraz zasoby. W niej skupione są obiekty Active Directory, takie jak użytkownicy, grupy, jednostki organizacyjne oraz komputery działające w jej obrębie. Aby można było domenę utworzyć, wymagany jest przynajmniej jeden kontroler.</p>
+      <hr>
+      <p><strong>Las</strong></p>
+      <p>zbiór jednej lub też wielu domen. Pierwsza domena, która zostanie utworzona w lesie, będzie tak zwaną domeną główną lasu, a cały las przyjmie nazwę taką jak domena główna. Jeśli przykładowo tworzymy nową domenę w nowym lesie i nazwiemy ją test.local to cały las przyjmie taką nazwę.</p>
+      <hr>
+      <p><strong>Drzewo</strong></p>
+      <p>jedna domena, albo kilka domen pracujących pod tą samą przestrzenią nazw DNS.</p>
+      <hr>
+      <p><strong>Jednostka organizacyjna</strong></p>
+      <p>to obiekt usługi AD, pozwalający na przechowywanie użytkowników, grup użytkowników oraz komputery. Jednostkom organizacyjnym można przypisywać poszczególne zasady grupy oraz delegować uprawnienia administracyjne</p>
+      <hr>
+
+      </article>
+  </div></div>
+
+<div id="praktyka">
+  <div>
+    <svg class="Chapter" width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      
+      <rect x="3" y="4" width="18" height="12" rx="1"></rect>
+      <line x1="7" y1="20" x2="17" y2="20"></line>
+      <line x1="9" y1="16" x2="9" y2="20"></line>
+      <line x1="15" y1="16" x2="15" y2="20"></line>
+    </svg>
+<h5>Praktyka</h5>
+    
+  <div class="sliders">
+    <h1>Instalacja Active Directory</h1>
+    <div id="container1">
+      <div id="slider-container">
+        <span onclick="slideRight(1)" class="btn"></span>
+          <div id="slider">
+            <div class="temat">
+              <img class="Miniatura" src="Content/WindowsArticle/AD/1.png">
+              <p>W menadżerze serwera sekcja Konfiguruj ten serwer lokalny wybieramy dodaj role i funkcje.</p>
+              <p>Ukazuje się nam Kreator dodawania ról i funkcji pierwszą stroną "Zanim rozpoczniesz" pomijamy klikając dalej.</p> 
+            </div>
+            <div class="temat">
+              <img class="Miniatura" src="Content/WindowsArticle/AD/2.png">
+              <p>Pulpit zdalny nas w tym momencie nie interesuje, wiec pozostawiamy domyślny wybór instalacja oparta na rolach lub na funkcjach i przechodzimy dalej.</p>
+            </div>
+            <div class="temat">
+              <img class="Miniatura" src="Content/WindowsArticle/AD/3.png">
+              <p>Pozostawiamy domyślną opcję "Wybierz serwer z puli serwerów". Mamy tylko jeden serwer wiec klikamy dalej.</p>
+            </div>
+            <div class="temat">
+              <img class="Miniatura" src="Content/WindowsArticle/AD/4.png">
+              <p>Rola która nas interesuje to "usługi domenowe Active Directory" zaznaczamy je i pojawia się nowe okno "Kreator dodawania ról i funkcji".</p>
+            </div>
+            <div class="temat">
+              <img class="Miniatura" src="Content/WindowsArticle/AD/5.png">
+              <p>W tym oknie zaznaczamy opcje "Dołącz narzędzia do zarządzania (jeśli dotyczy)" i klikamy "Dodaj funkcje".</p>
+            </div>
+            <div class="temat">
+              <img class="Miniatura" src="Content/WindowsArticle/AD/6.png">
+              <p>Kreator dodawania ról i funkcji automatycznie zaznaczy wymagane funkcje jeżeli w wcześniejszym kroku kliknęliśmy "Dodaj funkcje". Przechodzimy dalej..</p>
+            </div>
+            <div class="temat">
+              <img class="Miniatura" src="Content/WindowsArticle/AD/7.png">
+              <p>Kolejne okno przedstawia informacje o dodanych rolach i funkcjach. Pomijamy je klikając dalej. </p>
+            </div>
+            <div class="temat">
+              <img class="Miniatura" src="Content/WindowsArticle/AD/8.png">
+              <p>Teraz mamy opcje automatycznego uruchomienia ponownie systemu aby nie tracić czasu odznaczamy ją i przechodzimy dalej. Ponowne uruchomienie będzie wymagane przy tworzeniu nowej domeny wtedy je wykonamy.</p>
+            </div>
+            <div class="temat">
+              <img class="Miniatura" src="Content/WindowsArticle/AD/9.png">
+              <p>Po zainstalowaniu funkcji Active Directory klikamy w "Podnieś poziom tego serwera do poziomu kontrolera domeny" lub przycisk zamknij.</p>
+            </div>
+            <div class="temat">
+              <img class="Miniatura" src="Content/WindowsArticle/AD/10.png">
+              <p>Jeżeli nie podnieśliśmy poziomu serwera do poziomu kontrolera domeny klikając zamknij możemy to zrobić w menadżerze serwera klikając ikonę flagi a następnie w komunikacie "Konfiguracja po wdrożeniu" klikamy w "Podnieś poziom tego serwera do poziomu kontrole..."</p>
+            </div>
+        </div>
+      <span onclick="slideLeft(1)" class="btn"></span>
+    </div>
+  </div>
+</div>
+
+<div class="separatorBlack"></div>
+
+<div class="sliders">
+  <h1>Konfiguracja Domeny AD</h1>
+  <div id="container2">
+    <div id="slider-container">
+      <span onclick="slideRight(2)" class="btn"></span>
+        <div id="slider">
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/NoweDrzewoWNowymLesie/1.png">
+            <p>Dodajemy nowy las, w tym przypadku nazwiemy go <strong>szkola.local</strong></p>
+            <p>Przechodzimy dalej.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/NoweDrzewoWNowymLesie/2.png">
+            <p>Poziom funkcjonalności lasu pozostawiamy bez zmian aby nie ograniczać funkcjonalności do starszych wersji windows server. Ustawiamy hasło trybu przywracania i klikamy dalej.</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/NoweDrzewoWNowymLesie/3.png">
+            <p>W kolejnym oknie "Opcje DNS" ukarze się nam ostrzeżenie o braku autorytatywnej strefy DNS. Możemy go zignorować i przejeść dalej.</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/NoweDrzewoWNowymLesie/4.png">
+            <p>Nazwa NetBIOS domeny powinna uzupełnić się automatycznie jeżeli jednak tak nie będzie należy wpisać nazwę lasu bez <b>.local</b> dużymi literami. Nasz las zwie się <b>skola.local</b> wiec NetBIOS domeny będzie nazywał się <b>SZKOLA</b></p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/NoweDrzewoWNowymLesie/5.png">
+            <p>Wszelkie ścieżki ustawią się domyślnie możemy przejść dalej.</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/NoweDrzewoWNowymLesie/6.png">
+            <p>Przed ostatnie okno kreatora przedstawia podsumowanie konfiguracji domeny przed faktyczną instalacją i wdrożeniem jej na serwer.</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/NoweDrzewoWNowymLesie/7.png">
+            <p>Ostatnie okno prezentuje ostrzeżenie o zastosowaniu domyślnego zabezpieczeniu kryptograficznego Windows NT 4.0 oraz braku ustawionego statycznego adresu IP karty sieciowej po zainstalowaniu i automatycznym ponownym uruchomieniu należy dokonać konfiguracji statycznego IPv4 jeżeli nie wykonano tego wcześniej. </p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/NoweDrzewoWNowymLesie/8.png">
+            <p>Teraz wyskoczy powiadomienie że za chwilę nastąpi wylogowanie, po czym system uruchomi się ponownie.</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/NoweDrzewoWNowymLesie/9.png">
+            <p>Od teraz serwer jest na poziomie domeny widać jej nazwę przed nazwą użytkownika domeny zakończoną <b>\</b> po wpisaniu wcześniejszego hasła administratora wyskoczy informacja o tym że wygasło i musi być zmienione.</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/NoweDrzewoWNowymLesie/11.png">
+            <p>Gdy zmienimy hasło pojawi się stosowny komunikat i po kliknięciu OK zalogujemy się do domeny na serwerze.</p>
+          </div>
+      </div>
+    <span onclick="slideLeft(2)" class="btn"></span>
+  </div>
+</div>
+</div>
+
+<div class="separatorAlert">
+  <h1>Uwaga!</h1>
+  <p>
+    Jeżeli nie skonfigurowałeś interfejsu sieciowego na serwerze i klientach to zobacz odpowiedni artykuł jak to zrobić:
+  </p>
+  <div class="ArtycleRef">
+    <div class="temat homeArticle">
+      <img class="Miniatura" src="Content/WindowsArticle/WindowsKonfiguracjaInterfejsuSieciowego.png">
+      <h3>Interfejs Sieciowy</h3>
+      <a href="Windows-Interfejs-Sieciowy.html" class="buttonArticle">Przejdź do artykułu ></a>
+    </div>
+    <div class="temat homeArticle">
+      <img class="Miniatura" src="Content/LinuxArticle/LinuxKonfiguracjaInterfejsuSieciowego.png">
+      <h3>Interfejs Sieciowy</h3>
+      <a href="Linux-Interfejs-Sieciowy.html" class="buttonArticle">Przejdź do artykułu ></a>
+    </div>
+  </div>
+</div>
+
+<div class="sliders">
+  <h1>Dodawanie klienta do Domeny</h1>
+  <div id="container3">
+    <div id="slider-container">
+      <span onclick="slideRight(3)" class="btn"></span>
+        <div id="slider">
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieDoDomeny/1.png">
+            <p>Upewniamy się czy komunikacja z klienta na serwer jest poprawna za pomocą komendy <strong>ping</strong><em> adres docelowy </em>
+              jeżeli nie jest poprawna upewniamy się czy dobrze skonfigurowaliśmy interfejsy sieciowe systemów. 
+              Innym powodem problemu z transferem pakietów może być zapora ogniowa jak ją wyłączyć przedstawiono 
+              w artykule o konfiguracji interfejsu sieciowego windows.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieDoDomeny/2.png">
+            <p>Adekwatne kroki co w poprzednim slajdzie wykonujemy na serwerze próbując skomunikować się z klientem komendą ping adres docelowy.</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieDoDomeny/3.png">
+            <p>Uruchamiamy eksplorator plików, po czym klikając prawym przyciskiem myszy z rozwiniętej listy opcji wybieramy "Właściwości".</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieDoDomeny/4.png">
+            <p>1 Klikamy "Zmień ustawienia"</p>
+            <p>2 W zakładce "Nazwa komputera" klikamy "Zmień".</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieDoDomeny/5.png">
+            <p>Na zielono podkreślono nazwę komputera będzie ona widoczna na serwerze w katalogu Komputery pod domeną do której chcemy dołączyć.</p>
+            <p>Na niebiesko podkreślono nazwę domeny do której chcemy dołączyć.</p>
+            <p>Po wpisaniu danych klikamy "OK".</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieDoDomeny/6.png">
+            <p>Teraz system poprosi nas o zalogowanie się danymi użytkownika który podniósł poziom serwera do poziomu kontrolera domeny.</p> 
+            <p>Po wpisaniu danych klikamy "OK"</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieDoDomeny/7.png">
+            <p>Po poprawnym zalogowaniu się do domeny wyskoczy stosowny komunikat.</p>
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieDoDomeny/8.png">
+            <p>Aby dane zostały zastosowane po naciśnięciu "OK" nastąpi ponowne uruchomienie systemu. Od teraz będzie można się zalogować do kont utworzonych i zarządzanych na Serwerze z poziomem kontrolera tej domeny</p>
+          </div>
+      </div>
+    <span onclick="slideLeft(3)" class="btn"></span>
+  </div>
+</div>
+</div>
+
+<div class="separatorBlack"></div>
+
+<div class="sliders">
+  <h1>Nowy użytkownik domeny</h1>
+  <div id="container4">
+    <div id="slider-container">
+      <span onclick="slideRight(4)" class="btn"></span>
+        <div id="slider">
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/1.png">
+            <p>Po dołączeniu komputera (klienta) do domeny pojawiła się opcja zalogowania innym użytkownikiem który zaloguje się do <strong>Domeny</strong>"SZKOLA". Na razie nie mamy jeszcze utworzonego konta dla użytkownika domenowego wiecutwórzmy je.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/2.png">
+            <p>W menadżerze serwera z zakładki <strong>"<em>Narzędzia</em>"</strong> wybieramy <strong>"<em>Użytkownicy i komputery usługi Active Directory</em>"</strong>.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/3.png">
+            <p>Po rozwinięciu w prawym panelu naszej domeny ukarzą się nam jej podkatalogi tak zwane <strong>"Jednostki organizacyjne"</strong>. W katalogu Computers znajdują się <strong>Klienci</strong> podłączeni do domeny.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/4.png">
+            <p>Aby zachować ład, skład i porządek utwórzmy na naszej domenie kolejną <em>jednostkę organizacyjną</em>.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/5.png">
+            <p>Teraz nazwijmy naszą jednostkę organizacyjną np.: "<em>Uczniowie</em>".</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/6.png">
+            <p>Teraz w nowo utworzonej jednostce organizacyjnej utwórzmy grupę do której dodamy naszego użytkownika.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/7.png">
+            <p>Nadajmy nazwę naszej grupy np.: KlasaIT Wybierzmy zakres grupy</p> 
+            <p> <strong>Lokalny w domenie</strong> służy do nadawania uprawnień do katalogów obejmuje użytkowników z każdej domeny w lesie</p> 
+            <p> <strong>Globalny</strong> służy do nadawania uprawnień do katalogów oraz ról w systemie obejmuje użytkowników z tylko jednej domeny w lesie</p> 
+            <p> <strong>Uniwersalny</strong> służy do tych samych zadań co globalny lecz obejmuje użytkowników z każdej domeny w lesie</p> 
+            <p> Typ grupy pozostawiamy na <strong>Zabezpieczenia</strong> gdyż <strong>Dystrybucja</strong> jest stosowana tylko przez aplikacje poczty.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/8.png">
+            <p>No dobrze skoro mamy już jednostkę organizacyjną oraz grupę utwórzmy nowego użytkownika w katalogu "Uczniowie".</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/9.png">
+            <p>Uzupełniamy dane o Imię, Nazwisko oraz Nazwę logowania użytkownika.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/10.png">
+            <p>Teraz ustalamy hasło dla Jana oraz zaznaczamy interesujące nas opcje lub odznaczamy te których ni chcemy zastosować.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/11.png">
+            <p>Teraz dodajmy Kowalskiego do grupy którą utworzyliśmy i nazwaliśmy "KlasaIT"</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/12.png">
+            <p>Po wpisaniu całej lub części nazwy grupy klikamy "<em>Sprawdź nazwy</em>"" aby zweryfikować poprawność tego co wpisaliśmy.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/13.png">
+            <p>Po dodaniu użytkownika do grupy pojawi się stosowny komunikat.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/14.png">
+            <p>Teraz będąc na kliencie możemy się zalogować do domeny pod warunkiem że serwer domenowy jest włączony i komputer kliencki nawiązał z nim połączenie.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/DodawanieUseraDoDomeny/15.png">
+            <p>Przy pierwszym zalogowaniu się na nowe konto Windows będzie tworzył na dysku profil użytkownika może to chwilę potrwać po tym procesie będzie można przejść do użytkowania komputera.</p> 
+          </div>
+          
+      </div>
+    <span onclick="slideLeft(4)" class="btn"></span>
+  </div>
+</div>
+</div>
+
+<div class="separatorBlack"></div>
+
+<div class="sliders">
+  <h1>Czasowe ograniczenie logowania do Domeny AD</h1>
+  <div id="container5">
+    <div id="slider-container">
+      <span onclick="slideRight(5)" class="btn"></span>
+        <div id="slider">
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/OgraniczeniaCzasoweWindows/1.png">
+            <p>Aby ograniczyć możliwość logowania się do domeny w wybrane dni tygodnia oraz godziny w ciągu tych dub w <strong>"Użytkownicy i komputery usługi Active Directory"</strong> znajdźmy naszego delikwenta i prawym przyciskiem myszy wybierzmy <strong>Właściwości</strong>.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/OgraniczeniaCzasoweWindows/2.png">
+            <p>W zakładce Konto możemy zmienić login, opcje konta oraz datę wygaśnięcia go. Nas interesują <strong> "Godziny logowania..."</strong> .</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/OgraniczeniaCzasoweWindows/3.png">
+            <p>Na harmonogramie tygodnia i doby ustalamy dni oraz godziny gdy zezwalamy na zalogowanie się do domeny użytkownikowi.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/OgraniczeniaCzasoweWindows/4.png">
+            <p>Teraz gdy nastąpi próba zalogowania się poza wyznaczonym zakresem harmonogramu nastąpi odmowa dostępu do profilu użytkownika oraz wyskoczy stosowny komunikat.</p> 
+            <p></p>
+            <p>No dobrze nie bądźmy tak okrutni dla Jana niech loguje się kiedy chce lub ustawmy bardziej sensowne zakresy na harmonogramie.</p> 
+          </div>
+          
+      </div>
+    <span onclick="slideLeft(5)" class="btn"></span>
+  </div>
+</div>
+</div>
+
+<div class="separatorBlack"></div>
+
+<div class="sliders">
+  <h1>Partycja sieciowa domeny</h1>
+  <div id="container6">
+    <div id="slider-container">
+      <span onclick="slideRight(6)" class="btn"></span>
+        <div id="slider">
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/1.png">
+            <p>Do partycji sieciowej będziemy potrzebować wydzielić miejsce na dysku serwerowym domeny. Wiec tworzymy nowy folder na dysku <strong>C:\</strong> nazywając go "<em>Pliki</em>".</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/2.png">
+            <p>Teraz klikając prawym przyciskiem myszy uruchamiamy okno <strong>Właściwości</strong>.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/3.png">
+            <p>Przechodzimy do zakładki udostępnianie, a następnie klikamy <strong>"Udostępnianie zaawansowane"</strong>.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/4.png">
+            <p>Upewniamy się że opcja <strong>"Udostępnij ten folder"</strong> jest zaznaczona możemy nadać nazwę udziału oraz ograniczyć ilość użytkowników mogących korzystać jednocześnie z przydziału. Klikamy <strong>"Uprawnienia"</strong>.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/5.png">
+            <p>Chcemy ograniczyć dostąp do udziału wiec usuwamy grupę <b>"Wszyscy"</b> i dodajemy nową grupę.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/6.png">
+            <p>Wpisujemy nazwę grupy lub użytkownika a następnie klikając w <b>"Sprawdź nazwy"</b> weryfikujemy poprawność tego co wpisaliśmy. </p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/7.png">
+            <p>Dla grupy KlasaIT przypisujemy możliwość <em>Zmiany</em> oraz <em>Odczytu</em>.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/8.png">
+            <p>Dodajmy też admina domeny z wszystkimi uprawnieniami.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/9.png">
+            <p>Teraz przypiszmy użytkownikowi Jan dysk sieciowy. Wchodzimy w <strong>"Użytkownicy i komputery usługi Active Directory"</strong> a następnie w odpowiedniej <strong>"jednostce organizacyjnej"</strong> znajdujemy jego konto, po czym klikamy prawym przyciskiem myszy i wybieramy <strong>Właściwości</strong>.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/10.png">
+            <p>W zakładce Profil w sekcji Folder macierzysty podłączamy partycję nadajemy literę i ścieżkę do udziału</p>
+            <p>  "<strong>\\adres IP serwera\ścieżkę do folderu</strong>"  oraz na sam koniec możemy utworzyć nowy folder z nazwą logowania użytkownika stosując zmienną "<strong>\%username%</strong>" aby nie musieć jej sprawdzać </p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/11.png">
+            <p>Po zalogowaniu się na konto Kowalskiego w "<em>Ten komputer</em>" ujrzymy nową partycję sieciową</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/12.png">
+            <p>Przeprowadźmy test.</p>
+            <p> Utwórzmy nowy plik tekstowy i dodajmy do niego treść.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/PartycjaSieciowa/13.png">
+            <p>Teraz na serwerze w katalogu pliki powstał pod katalog o nazwie Janeczek a w nim plik tekstowy o nazwie "test" z zawartością "zdane".</p> 
+            <p>  Wiec wszystko działa jak należy.</p> 
+          </div>
+
+          
+         
+      </div>
+    <span onclick="slideLeft(6)" class="btn"></span>
+  </div>
+</div>
+</div>
+
+<div class="separatorBlack"></div>
+
+<div class="sliders">
+  <h1>Profil mobilny</h1>
+  <div id="container7">
+    <div id="slider-container">
+      <span onclick="slideRight(7)" class="btn"></span>
+        <div id="slider">
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/ProfilMobilny/1.png">
+            <p>Aby utworzyć profil mobilny przygotujmy dla niego katalog na dysku serwera.
+              Wykonanie kroków 1-6 jest identyczne jak w przypadku partycji sieciowej.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/ProfilMobilny/2.png">
+            <p>Tym razem nie możemy przydzielić grupy do uprawnień, bo to nam po prostu nie zadziała dodajmy wiec bezpośrednio użytkownika.</p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/ProfilMobilny/3.png">
+            <p>Tym razem ścieżkę do katalogu wpiszemy w sekcji profil użytkownika.
+              "<strong>\\adres IP serwera\ścieżkę do folderu z profilami</strong>" oraz na sam koniec możemy utworzyć nowy folder z nazwą logowania użytkownika stosując zmienną "<strong>\%username%</strong>" aby nie musieć jej sprawdzać </p> 
+          </div>
+          <div class="temat">
+            <img class="Miniatura" src="Content/WindowsArticle/ProfilMobilny/4.png">
+            <p>Teraz aby przetestować działanie profilu mobilnego dodajmy nowego użytkownika do domeny i zmieńmy mu tapetę oraz utwórzmy plik tekstowy na pulpicie. Jeżeli w zależności od zalogowanego użytkownika jest inna tapeta oraz niezależnie od stacji roboczej tapeta i plik po zalogowaniu się do domeny są poprawne to profil mobilny działa. <strong>Synchronizacja danych następuje po wylogowaniu się</strong>.</p> 
+          </div>
+      </div>
+    <span onclick="slideLeft(7)" class="btn"></span>
+  </div>
+</div>
+</div>
+
+<div class="separatorBlack"></div>
+
+
+</div>
+</div>
+<div id="zadania">
+  <div>
+    <svg class="Chapter" width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+     
+      <rect x="5" y="3" width="14" height="18" rx="2"></rect>
+      <line x1="9" y1="7" x2="15" y2="7"></line>
+      <line x1="9" y1="11" x2="15" y2="11"></line>
+      <line x1="9" y1="15" x2="13" y2="15"></line>
+   </svg>
+   <h5>Zadania</h5>
+  </div>
+  <article>
+    <div class="zadanie">
+      <h1>Komisariat</h1>
+      <div class="Setp"><div class="circleBackground color1"><p>1</p></div>
+      <p>Podnieś poziom serwera do poziomu kontrolera domeny i nazwij ją "komisariat.local"</p></div>
+      <div class="Setp"><div class="circleBackground color1"><p>2</p></div>
+      <p>Utwórz jednostki organizacyjne i nazwij je "Kryminalni" i "Policjanci"</p></div>
+      <div class="Setp"><div class="circleBackground color1"><p>3</p></div>
+      <p>W jednostce organizacyjnej "Kryminalni" utwórz grupy o nazwach "Terenowi" i "Laboratoryjni"</p></div>
+      <div class="Setp"><div class="circleBackground color1"><p>4</p></div>
+      <p>W jednostce organizacyjnej "Policjanci" utwórz grupy o nazwach "Drogowi" i "Detektywi"</p></div>
+      <div class="Setp"><div class="circleBackground color1"><p>5</p></div>
+      <p>W każdej z jednostek organizacyjnych utwórz po dwóch użytkowników i przydziel im harmonogram  połączenia się z domeną Policjanci mogą się zalogować od 6:00 do 14:00 w dni robocze a Kryminalni od 14:00 do 22:00 w dni robocze</p></div>
+      <div class="Setp"><div class="circleBackground color1"><p>6</p></div>
+      <p>Przypisz im profile mobilne i pozmieniaj tła pulpitu dla każdego inną może być to jednolity kolor</p></div>
+      <div class="Setp"><div class="circleBackground color1"><p>7</p></div>
+      <p>Dla kryminalnych przydziel osobiste partycje sieciowe a dla policjantów wspólną partycję sieciową</p></div>
+    </div>
+    <div class="zadanie">
+      <h1>Firma</h1>
+      <div class="Setp"><div class="circleBackground color2"><p>1</p></div>
+      <p>Podnieś poziom serwera do poziomu kontrolera domeny i nazwij ją "firma.local"</p></div>
+      <div class="Setp"><div class="circleBackground color2"><p>2</p></div>
+      <p>Utwórz jednostkę organizacyjną i nazwij ją "Pracownicy"</p></div>
+      <div class="Setp"><div class="circleBackground color2"><p>3</p></div>
+      <p>W jednostce organizacyjnej "Pracownicy" utwórz grupy o nazwach "Programowanie" i "Marketing"</p></div>
+      <div class="Setp"><div class="circleBackground color2"><p>4</p></div>
+      <p>W jednostce organizacyjnej "Pracownicy" utwórz  dwóch użytkowników Adam Adamski oraz Anna Kowalczyk i przydziel im harmonogram połączenia się z domeną tylko w dni parzyste od 8:00 do 16:00</p></div>
+      <div class="Setp"><div class="circleBackground color2"><p>5</p></div>
+      <p>Dla Anny utwórz profil mobilny</p></div>
+      <div class="Setp"><div class="circleBackground color2"><p>6</p></div>
+      <p>Dla Adama przydziel partycję sieciową</p></div>
+    </div>
+   
+  </article>
+</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

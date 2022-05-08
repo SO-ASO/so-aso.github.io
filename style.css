@@ -1,0 +1,424 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  background: #106977;
+  scroll-behavior: smooth;
+}
+article{
+  padding: 15px;
+}
+
+h1{
+  font-size: 2.1rem;
+  text-align: center;
+  color: #232323;
+  font-family: system-ui;
+  margin: 0;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+h2{
+  font-size: 2.1rem;
+  text-align: center;
+  color: #fafafa;
+  font-family: system-ui;
+  margin: 0;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+
+}
+h3{
+  margin: 10px;
+}
+h4{
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  font-size: 1.2rem;
+  font-family: system-ui;
+}
+h5{
+  font-size: 24px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+p{
+  margin: 1.5px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*custom */
+
+#teoria{
+  display: inline-block;
+  background-color: aliceblue;
+  width: 100%;
+}
+#praktyka{
+  display: inline-block;
+  background-color: aliceblue;
+  width: 100%;
+}
+#zadania{
+  display: inline-block;
+  background-color: aliceblue;
+  width: 100%;
+}
+.Teoria{
+  width: 10%;
+  float: left;
+  padding-left: 30%;
+}
+.Praktyka{
+  width: 10%;
+  float: left;
+  padding-left: 5%;
+}
+.Zadania{
+  width: 10%;
+  float: right;
+  padding-right: 30%;
+}
+
+svg:hover.imageLink{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.separatorWhite{
+  background-color: #ffffff;
+  height: 16rem;
+  width: 100%;
+  margin: auto;
+  display:inline-block;
+  text-align: center; 
+}
+.Chapter{
+  padding-left: calc(50% - 50px);
+  padding-top: 2%;
+ }
+.separatorBlack
+{
+  background-color: #232323;
+  height: 5rem;
+  width: 100%;
+  float: left;
+}
+.separatorAlert{
+  height: fit-content;
+  width: 100%;
+  float: left;
+  background-color: #232323;
+  text-align: center;
+}
+.separatorAlert>h1{
+  color: orangered;
+  font-size: 350%;
+  padding-bottom: 0;
+}
+.separatorAlert>p{
+  padding: 40px;
+  font-size: 150%;
+  color: slategrey;
+}
+.ArtycleRef{
+  display: inline-block;
+}
+#WinLinuxBlock{
+  height: 10rem;
+  width: 100%;
+  margin: 0;
+  float: right;
+  background-attachment: fixed;
+  background-image: url(Content/WebElementsImages/WinLinux2.png);
+  background-repeat: no-repeat;
+
+}
+#header{
+  height: 10%;
+  width: 100%;
+  margin: 0;
+  float: left;
+  background-color: #40b0bf;
+}
+.Logo{
+  height: 80%;
+  width: auto;
+  margin: 10px;
+  float: left;
+}
+.Logo:hover{
+  transform: scale(.9);
+  cursor: pointer;
+}
+/* Button*/
+.buttonArticle {
+	box-shadow: -5px 8px 10px -9px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:4px;
+	border:1px solid #29668f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px 13px;
+	text-decoration:none;
+	text-shadow:-3px 3px 2px #3d768a;
+  margin: 10px;
+}
+.buttonArticle:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.buttonArticle:active {
+	position:relative;
+	top:1px;
+}
+/*zadania style*/
+.zadanie{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.circleBackground{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+
+  text-align: center;
+  float: left;
+}
+.circleBackground>p{
+  padding: 20% 0 0 0;
+  color: floralwhite;
+  font-size: xxx-large;
+}
+.Setp{
+  display: inline-block;
+  width: 100%;
+  margin: 10px;
+}
+.Setp>p{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 0% 0% 100px;
+}
+/*colors*/
+.color1{
+  background-color: #00bcd4;
+}
+.color2{
+  background-color: #ff7f50;
+}
+.color3{
+  background-color: #9c27b0;
+}
+
+
+/* Slider*/
+.temat{
+  min-height: 90%;
+  width: 35rem;
+  float: left;
+  margin: 10px;
+  background-color: #f3f3f3;
+  border: #9b9b9b 5px solid;
+  border-radius: 4%;
+  
+}
+.temat.homeArticle
+{
+  width: 16.5rem;
+  border-radius: 4%;
+  background-color: #c5c5c5;
+
+}
+.temat.homeArticle>h3
+{ 
+  height: 15%
+}
+.temat>p{
+  padding: 10px;
+}
+
+.Miniatura {
+  min-height: 50%;
+  width: 98.5%;
+  border-radius: 2%;
+  border: 2px #bbbbbb solid;
+}
+
+.sliders {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #2299aa;
+  display: block;
+  place-items: center;
+  border: 10px solid #2323237c;
+  float: left;
+}
+
+#slider-container {
+  position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#slider-container .btn {
+  position: absolute;
+  top: calc(50% - 30px);
+  height: 30px;
+  width: 30px;
+  border-left: 8px solid #8d0000;
+  border-top: 8px solid #a50000;
+}
+
+#slider-container .btn:hover {
+  transform: scale(1.2);
+}
+
+#slider-container .btn.inactive {
+  border-color: #fafafa77
+}
+
+#slider-container .btn:first-of-type {
+  transform: rotate(-45deg);
+  left: 10px
+}
+
+#slider-container .btn:last-of-type {
+  transform: rotate(135deg);
+  right: 10px;
+}
+
+#slider-container #slider {
+  display: -webkit-inline-box;
+  width: 1200%;
+  height: 50%;
+  transition: all .5s;
+}
+
+/* Devices size */
+@media only screen and (min-width: 1600px) {
+
+  #slider-container #slider .slide {
+    width: calc(1.7% - 20px);
+  }
+  #WinLinuxBlock{
+    background-size: contain;
+  }
+  .sliders {
+    width: calc(100% - 20px);
+  }
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+  #slider-container #slider .slide {
+    width: calc(2.5% - 20px);
+  }
+  .sliders {
+    width: calc(100% - 20px);
+  }
+   #WinLinuxBlock{
+    background-image: url(Content/WebElementsImages/WinLinux2.png);
+    background-size: contain;
+
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+
+  #slider-container #slider .slide {
+    width: calc(2.5% - 20px);
+  }
+  .sliders {
+    width: calc(100% - 20px);
+  }
+  
+   #WinLinuxBlock{
+    background-image: url(Content/WebElementsImages/WinLinux3.png);
+    background-size: cover;
+    
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  #slider-container #slider .slide {
+    width: calc(5% - 20px);
+  }
+  .sliders {
+    width: calc(100% - 20px);
+  }
+   #WinLinuxBlock{
+    background-image: url(Content/WebElementsImages/WinLinux4.png);
+   }
+}
+
+@media only screen and (max-width: 370px) {
+
+  .sliders {
+    width: calc(100% - 20px);
+  }
+  #slider-container #slider .slide {
+    width: calc(10% - 20px);
+  }
+  #WinLinuxBlock{
+    background-image: url(Content/WebElementsImages/WinLinuxPhone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  
+  }
+  h2{
+    font-size: 1.7rem;
+    display: table;
+  }
+  .Logo{
+    margin: 5px;
+    margin-top: 10%;
+  }
+  .temat{
+    width: 15rem;
+  }
+  .teoria{
+    height: 100%;
+    width: 10%;
+    float: left;
+    padding: 4rem 0 0 5%;
+  
+  }
+  .Praktyka{
+    height: 100%;
+    width: 10%;
+    float: left;
+    padding: 4rem 0 0 20%;
+  }
+  .Zadania{
+    height: 100%;
+    width: 10%;
+    float: right;
+    padding: 4rem 25% 0 0;
+  }
+
+}
+/*
+360
+415
+1024
+1280
+1366
+1440
+1540
+1600
+1920
+*/
