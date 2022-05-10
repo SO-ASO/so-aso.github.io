@@ -10,14 +10,14 @@
 </head>
 <body>
 <div id="header">
-  <img class="Logo" src="Content/WebElementsImages/Logo.png" onclick="location.href='index.html';"/>
+  <a href="index.html"><img class="Logo" src="Content/WebElementsImages/Logo.png" /></a>
   <h2>Systemy Operacyjne i Administracja Systemami Operacyjnymi</h2>
   <div id="WinLinuxBlock">  
   </div>
 </div>
 
 <div class="separatorWhite">
-  <div class="Teoria" >
+  <div class="Teoria" onclick='alert("Ten artykuł nie posiada teorii")'>
     <svg class="imageLink" onclick="location.href='#teoria';"  width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       
       <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
@@ -49,22 +49,7 @@
    <h5>Zadania</h5>
   </div>
 </div>
-<div id="teoria">
-  <div>
-    <svg class="Chapter" width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      
-      <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
-      <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
-      <line x1="3" y1="6" x2="3" y2="19"></line>
-      <line x1="12" y1="6" x2="12" y2="19"></line>
-      <line x1="21" y1="6" x2="21" y2="19"></line>
-    </svg>
-    <h5>Teoria</h5>
-    <article>
-      Working Progress
-      </article>
-  </div>
-</div>
+
 
 <div id="praktyka">
   <div>
@@ -85,7 +70,126 @@
       <div id="slider">
         <div class="temat">
           <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/1.png">
-          <p>Working Progress</p> 
+          <p>Przed rozpoczęciem instalacji skonfiguruj maszynę. Pierwsza karta sieciowa jako NAT druga jako Sieć wewnętrzna. Pierwszy ekran instalacji Ubuntu server prosi nas o wybranie języka. Wybieramy English</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/2.png">
+          <p>Pomijamy aktualizację. Wykonamy ją po instalacji systemu.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/3.png">
+          <p>Jako klawiaturę domyślną wybieramy Polish aby mieć dostęp do polskich znaków takich jak ą, ś, ć, ę itd.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/4.png">
+          <p>Instalator wykrył nasze dwie karty sieciowe. Opcja "Create bond" pozwoli nam na utworzenie z kilku interfejsów sieciowych jeden wirtualny dzięki czemu zwiększymy przepustowość oraz w razie awarii reszta kart sieciowych będzie mogła dalej kontynuować pracę. Na razie tego nie potrzebujemy. Skonfigurujmy nasz interfejs sieci wewnętrznej. </p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/5.png">
+          <p>Wybieramy manualne ustawienie adresu IPv4 (statyczne)</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/6.png">
+          <p>"Subnet" to adres sieci z maską.</p> 
+          <p>"Address" to IP interfejsu sieciowego </p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/7.png">
+          <p>Tu taj możemy wpisać adres serwera Proxy. Pomińmy ten etap.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/8.png">
+          <p>To samo tyczy się adresem serwera lustrzanego</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/9.png">
+          <p>Jeżeli chcesz podzielić dysk na mniejsze partycje skorzystaj z "Custom storage layout". Z racji że instalacja odbywa się na VirtualBox automatycznego tworzenia partycji z zastosowaniem LVM dla dynamicznego dysku wirtualnego.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/10.png">
+          <p>Linux utworzył nam trzy partycje</p> 
+          <p>  partition 1 - program rozruchowy grub</p>
+          <p>  partition 2 - przestrzeń dla /boot</p>
+          <p>   partition 3 - obszar roboczy</p>
+          <p>   Zatwierdzamy opcją "Done"</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/11.png">
+          <p>Pojawia się komunikat o możliwej utracie danych poprzez format dysku klikamy "Continue" i przechodzimy dalej.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/12.png">
+          <p>Tworzymy profil "sudersa" czyli naszego użytkownika będącego w  grupie super użytkowników. Jego nazwa niech będzie Egzamin. Nazwa serwera przykładowo ubuntu-server-vb (nie może mieć dużych liter). Login taki sam jak nazwa tylko z małych liter, a hasało standardowo ZAQ!2wsx
+          </p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/13.png">
+          <p>Jeżeli korzystasz z rozszerzanego wsparcia dla firm korzystających z Ubuntu server możesz wpisać wygenerowanym na twoim koncie canonical token dostępowy.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/14.png">
+          <p>Od razu możemy zainstalować SSH nie konfigurując go.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/15.png">
+          <p>Mamy też opcję zainstalowania od razu dodatkowe usługi i role dla naszego serwera. Możemy pominąć.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/16.png">
+          <p>Rozpoczyna się instalacja można się przełączyć na pełen wgląd w logi procesu instalacji.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/17.png">
+          <p>Po instalacji restartujemy wybierając opcje "Reboot now"</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/18.png">
+          <p>Podczas instalacji tworzyliśmy użytkownika i konfigurowaliśmy interfejsy sieciowe, do tego procesu potrzebna była specjalna usługa cloud-init Powiadomienia z tej usługi mogą być uciążliwe, wyłączmy je. Tworząc plik w odpowiednim katalogu:
+            <em>sudo touch /etc/cloud/cloud-init.disable</em>a następnie zrestartujmy system</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/19.png">
+          <p>Dokonajmy aktualizacji:</p> 
+          <p>sudo apt-get update</p> 
+          <p>sudo apt-get upgrade</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/20.png">
+          <p>Możemy dodać GUI aby nie było tak smutno :). Zainstalujmy tasksel.
+            Komenda do instalacji pakietów to
+            sudo apt-get install "nazwa pakietu"
+            i uruchommy go sudo tasksel</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/21.png">
+          <p>Teraz za pomocą spacji wybierzmy odpowiednie oprogramowanie ja wybiorę Xubuntu dexktop.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/22.png">
+          <p>Teraz rozpocznie się instalacja wybranych "softów"</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/23.png">
+          <p>Po zakończeniu instalacji wpisz reboot aby zrestartować system.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/24.png">
+          <p>Po uruchomieniu Ubuntu server uruchomi się interfejs graficzny który zainstalowaliśmy</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/25.png">
+          <p>Zainstalujmy dodatki gościa VirtualBox</p>
+          <p><em>sudo add-apt-repository multiverse</em></p>
+          <p><em>sudo apt instal virtualbox-guest-dkms virtualbox-guest-x11</em></p>  
+          <p>zatwierdzamy i czekamy.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/26.png">
+          <p>Po udanej instalacji może być wymagany restart systemu.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/LinuxArticle/Ubuntu-Server-Install/27.png">
+          <p>Teraz mamy już gotowy Ubuntu sever z GUI Xubuntu oraz dodatkami Gościa VirtualBox</p> 
         </div>
       
       
@@ -101,6 +205,7 @@
 
 <div id="zadania">
   <div>
+    <h5><a href="https://drive.google.com/drive/folders/13XEJoY8KRygZ8jpUxZjWdCRb2-1lFhh6?usp=sharing">Kliknij tu aby pobrać export maszyny z przykładu</a></h5>
     <svg class="Chapter" width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
      
       <rect x="5" y="3" width="14" height="18" rx="2"></rect>
@@ -111,13 +216,13 @@
   </div>
   <article>
     <div class="zadanie">
-      <h1>Firma</h1>
+      <h1>Zadanie</h1>
       <div class="Setp"><div class="circleBackground color1"><p>1</p></div>
-      <p>Zainstaluj Ubuntu w wersji Desktop</p></div>
+      <p>Zainstaluj Ubuntu w wersji Server</p></div>
       <div class="Setp"><div class="circleBackground color1"><p>2</p></div>
       <p>Niech twój użytkownik nazywa się twoim imieniem i perwszą literą nazwiska bez polskich znków</p></div>
       <div class="Setp"><div class="circleBackground color1"><p>3</p></div>
-      <p>Wyłącz powiadomienia cloud.ini</p></div>
+      <p>Wyłącz powiadomienia cloud-init</p></div>
       <div class="Setp"><div class="circleBackground color1"><p>4</p></div>
       <p>Zainstaluj GUI - Graficzny interfejs użytkownika.</p>
     <p>Do wyboru masz kubuntu, xubuntu, ubuntu mate, ubuntu studio</p></div>

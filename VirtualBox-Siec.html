@@ -10,14 +10,14 @@
 </head>
 <body>
 <div id="header">
-  <img class="Logo" src="Content/WebElementsImages/Logo.png" onclick="location.href='index.html';"/>
+  <a href="index.html"><img class="Logo" src="Content/WebElementsImages/Logo.png" /></a>
   <h2>Systemy Operacyjne i Administracja Systemami Operacyjnymi</h2>
   <div id="WinLinuxBlock">  
   </div>
 </div>
 
 <div class="separatorWhite">
-  <div class="Teoria" >
+  <div class="Teoria" onclick='alert("Ten artykuł nie posiada teorii")'>
     <svg class="imageLink" onclick="location.href='#teoria';"  width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       
       <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
@@ -38,7 +38,7 @@
     </svg>
     <h5>Praktyka</h5>
   </div>
-  <div class="Zadania" >
+  <div class="Zadania" onclick='alert("Ten artykuł nie posiada zadań")'>
     <svg class="imageLink" onclick="location.href='#zadania';"  width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
      
       <rect x="5" y="3" width="14" height="18" rx="2"></rect>
@@ -49,85 +49,7 @@
    <h5>Zadania</h5>
   </div>
 </div>
-<div id="teoria">
-  <div>
-    <svg class="Chapter" width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      
-      <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
-      <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
-      <line x1="3" y1="6" x2="3" y2="19"></line>
-      <line x1="12" y1="6" x2="12" y2="19"></line>
-      <line x1="21" y1="6" x2="21" y2="19"></line>
-    </svg>
-    <h5>Teoria</h5>
-    <article>
-      <h1>Adresacja IP</h1>
-      <p></p>
-      <p>
-      Adres IP to logiczny adres numeryczny nadawany dla interfejsu sieciowego, grupie interfejsów bądź całej sieci komputerowej  w protokole IP, służący identyfikacji elementów w warstwie trzeciej modelu OSI. Obecnie w Internecie widoczne są tylko pakiety IPv4 i IPv6 o numerach wersji IP odpowiednio 4 i 6. 
-    </p><p></p>
-      <p>Dostępna pula adresowa IPv4 to 2^32 co daje nam </p>
-      <p>4 294 967 296 adresów</p>
-      <p>Dostępna pula adresowa IPv6 to 2^128 co daje nam </p>
-      <p>340 282 366 920 938 463 463 374 607 431 768 211 456 adresów</p>
-    </p>
-      <p>IPv4 (<em>ang. Internet Protocol version 4</em>) to <b>32 bitowa</b> liczba zapisywana w systemie dziesietnym w czterech oktetach po 8 bitów odzielonych w tym zapisie kropką.
-      Przez urządzenia sieciowe jest interpretowana w systemie binarny jako
-      ciąg zer i jedynek.
-      Jeden oktet to zakres od 0 do 250, a zapis binarny to od 00000000 do 11111111
-      Maska podsieci
-      32 bitowy zapis służący do określenia cześci sieciowej oraz hostowej adresu IP.
-      W przeciwienistwie do IP w zapisie binarnym maska to ciąg jedynek odpowiadających za sieć oraz wystepujący po nich ciąg zer bedący cześcią hostową. Maskę można zapisać przy ip urzywając skróconego zapisu który ma postać /ilość jedynek
-    </p>
-    <p></p>
-    <h4>Maska</h4>
-      <p>Zapis binarny: 11111111<b>11111111</b>11111111<b>00000000</b></p>
-      <p>Zapis dziesiętny: 255.<b>255</b>.255.<b>0</b></p>
-      <p>Zapis skrótowy: /24</p>
-      <h4>IPv4</h4>
-      <p>Zapis binarny: 11000000<b>10101000</b>10100101<b>01101110</b></p>
-      <p>Zapis dziesiętny: 192.<b>168</b>.165.<b>110</b></p>
-      <p></p>
-      <h4>Adresy specjalne</h4>
-      <p>0.0.0.0 – adres nieokreślony</p>
-      <p>127.0.0.1 – loopback, adres wskazujący na host lokalny.</p>
-      <p></p>
-      <h4>IPv6</h4>
-      <p>IPv6 (<em>ang. Internet Protocol version 6</em>) – jest to kolejna wersja protokołu IP. Adres IPv6 to <b>128 bitowa</b> liczba zapisana zwykle jako osiem 16-bitowych bloków w systemie heksadecymalnym oddzielonych dwukropkiem.
-      Zapis adresacji IPv6:</p>
-      <p></p>
-      <p>Adresy IPv6 w zapisie binarnym byłyby bardzo nieczytelne dlatego stosuje się szereg zasad dzięki, którym można ułatwić ich odczyt i zapis.</p>
-      <p></p>
-      <p>Można jednokrotnie użyć podwójnego dwukropka wskazującego dowolną liczbę bitów zerowych.</p>
-      Można pominąć wszystkie zera wiodące.</p>
-      Przykładowy adres IPv6 w zapisie binarnym:</p>
-      <p></p>
-      <p>
-      <b>0010000100000001</b>0000000000000000<b>0000000000000000</b>0000000000000000<b>0000000000000000</b>0101110110111100<b>1001010000101100</b>0000010110101111</p>
-      
-      <h4>Przykładowy adres IPv6 w zapisie heksadecymalnym:</h4>
-      
-      <p>2101:0000:0000:0000:0000:5dbc:942c:05af – Zapis pełny: osiem 16-bitowych bloków oddzielonych dwukropkiem (:)</p>
-      
-      <p>2101:0:0:0:0:5dbc:942c:05af – Zapis ze skróconymi blokami zer do jednego znaku</p>
-      
-      <p>2101:0:0::5dbc:942c:05af – Zapis z wykluczeniem dwóch bloków zer za pomocą znaku dwukropka (:)</p>
-      
-      <p>2101::5dbc:942c:05af – Zapis z wykluczeniem 4 bloków zer za pomocą znaku dwukropka (:)</p>
-      
-      <p>2101::5dbc:942c:5af – Zapis z wykluczeniem wszystkich zer wiodących i z wykluczeniem 4 bloków zer za pomocą znaku dwukropka (:)</p>
-      <p></p>
-      <p>Wszystkie powyższe adresy są równoznaczne.</p>
-      
-      <h4>Adresy specjalne</h4>
-      <p>::/128 – adres nieokreślony</p>
-      <p>::1/128 – loopback, adres wskazujący na host lokalny.</p>
-      <p>::ffff:0:0/64 – pula zarezerwowana dla zachowania kompatybilności z protokołem IPv4 pozwalająca wykorzystywać komunikację według protokołu IPv6 w sieci IPv4 (np. ::ffff:192.0.2.128),</p>
-      
-      
-      </article>
-  </div>
-</div>
+
 
 <div id="praktyka">
   <div>
@@ -147,8 +69,30 @@
     <span onclick="slideRight(1)" class="btn"></span>
       <div id="slider">
         <div class="temat">
-          <img class="Miniatura" src="Content/WindowsArticle/WindowsSerwerKartaSieciowa/1.png">
-          <p>1 Kliknij prawym przyciskiem myszy na ikonę sieci</p> 
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Siec/1.png">
+          <p>Niepodłączona - jak sama nazwa mówi karta sieciowa nie została podłączona</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Siec/2.png">
+          <p>Sieć wewnętrzna -powiedzmy że to podłączenie do odpowiedniego wirtualnego przełącznika o konkretnej nazwie jeżeli dwie maszyny będą miały kartę sieciową "Sieć wewnętrzna" a ich Nazwy będą różne to mamy dwie oddzielne sieci i bez kolejnej maszyny z skonfigurowanym routingiem łączącą te ścięci wewnętrzne komunikacja nie będzie możliwa</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Siec/3.png">
+          <p>Karta sieci izolowanej (host-only) - w tej sytuacji VirtualBox nadaje dla Gospodarza specjalną kartę sieciową oraz uruchamia serwer DHCP aby dokonać jej konfiguracji należy wejść do listy rozwijanej "Plik" i wybrać "Host Network Manager..."</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Siec/4.png">
+          <p>Mostkowana karta sieciowa (bridged) - połączenie bezpośrednie z fizyczną kartą sieciową Gospodarza oraz z możliwością wzajemnego dostępu z innymi urządzeniami w sieci fizycznej np.: z telewizorem a adres IP zostanie przydzielony z DHCP np.: routera</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Siec/5.png">
+          <p>NAT - jest dostęp do internetu a komunikacja z gospodarzem oraz innymi maszynami nie jest możliwa
+            może skomunikować się z Gospodarzem poprzez przekierowania portów</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Siec/6.png">
+          <p>Sieć Nat - jest dostęp do internetu a komunikacja z gospodarzem w przeciwieństwie do pozostałych maszyna nie jest możliwa, pod warunkiem że skonfigurowano DHCP i wybraniu nazwy Ustawienia dotyczące DHCP znajdują si w liście rozwijanej "Plik", "Globalne ustawienia..." i zakładka Sieć 
+            może skomunikować się z Gospodarzem poprzez przekierowania portów</p> 
         </div>
       
       
@@ -162,20 +106,7 @@
 <div class="separatorBlack"></div>
 
 
-<div id="zadania">
-  <div>
-    <svg class="Chapter" width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-     
-      <rect x="5" y="3" width="14" height="18" rx="2"></rect>
-      <line x1="9" y1="7" x2="15" y2="7"></line>
-      <line x1="9" y1="11" x2="15" y2="11"></line>
-      <line x1="9" y1="15" x2="13" y2="15"></line>
-   </svg>
-  </div>
-  <article>Zadania
-   
-  </article>
-</div>
+
 <footer>
   <p>Kontakt: so.aso.strona@gmail.com</p>
   <p>Dysk google: <a href="https://drive.google.com/drive/folders/1iat475Zk6U7E1pq3RZjaSxCLEHBTuRRy?usp=sharing">Kliknij tu</a></p>

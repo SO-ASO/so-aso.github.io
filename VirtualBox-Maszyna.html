@@ -10,14 +10,14 @@
 </head>
 <body>
 <div id="header">
-  <img class="Logo" src="Content/WebElementsImages/Logo.png" onclick="location.href='index.html';"/>
+  <a href="index.html"><img class="Logo" src="Content/WebElementsImages/Logo.png" /></a>
   <h2>Systemy Operacyjne i Administracja Systemami Operacyjnymi</h2>
   <div id="WinLinuxBlock">  
   </div>
 </div>
 
 <div class="separatorWhite">
-  <div class="Teoria" >
+  <div class="Teoria" onclick='alert("Ten artykuł nie posiada teorii")'>
     <svg class="imageLink" onclick="location.href='#teoria';"  width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       
       <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
@@ -38,7 +38,7 @@
     </svg>
     <h5>Praktyka</h5>
   </div>
-  <div class="Zadania" >
+  <div class="Zadania" onclick='alert("Ten artykuł nie posiada zadań")'>
     <svg class="imageLink" onclick="location.href='#zadania';"  width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
      
       <rect x="5" y="3" width="14" height="18" rx="2"></rect>
@@ -49,85 +49,7 @@
    <h5>Zadania</h5>
   </div>
 </div>
-<div id="teoria">
-  <div>
-    <svg class="Chapter" width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      
-      <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
-      <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
-      <line x1="3" y1="6" x2="3" y2="19"></line>
-      <line x1="12" y1="6" x2="12" y2="19"></line>
-      <line x1="21" y1="6" x2="21" y2="19"></line>
-    </svg>
-    <h5>Teoria</h5>
-    <article>
-      <h1>Adresacja IP</h1>
-      <p></p>
-      <p>
-      Adres IP to logiczny adres numeryczny nadawany dla interfejsu sieciowego, grupie interfejsów bądź całej sieci komputerowej  w protokole IP, służący identyfikacji elementów w warstwie trzeciej modelu OSI. Obecnie w Internecie widoczne są tylko pakiety IPv4 i IPv6 o numerach wersji IP odpowiednio 4 i 6. 
-    </p><p></p>
-      <p>Dostępna pula adresowa IPv4 to 2^32 co daje nam </p>
-      <p>4 294 967 296 adresów</p>
-      <p>Dostępna pula adresowa IPv6 to 2^128 co daje nam </p>
-      <p>340 282 366 920 938 463 463 374 607 431 768 211 456 adresów</p>
-    </p>
-      <p>IPv4 (<em>ang. Internet Protocol version 4</em>) to <b>32 bitowa</b> liczba zapisywana w systemie dziesietnym w czterech oktetach po 8 bitów odzielonych w tym zapisie kropką.
-      Przez urządzenia sieciowe jest interpretowana w systemie binarny jako
-      ciąg zer i jedynek.
-      Jeden oktet to zakres od 0 do 250, a zapis binarny to od 00000000 do 11111111
-      Maska podsieci
-      32 bitowy zapis służący do określenia cześci sieciowej oraz hostowej adresu IP.
-      W przeciwienistwie do IP w zapisie binarnym maska to ciąg jedynek odpowiadających za sieć oraz wystepujący po nich ciąg zer bedący cześcią hostową. Maskę można zapisać przy ip urzywając skróconego zapisu który ma postać /ilość jedynek
-    </p>
-    <p></p>
-    <h4>Maska</h4>
-      <p>Zapis binarny: 11111111<b>11111111</b>11111111<b>00000000</b></p>
-      <p>Zapis dziesiętny: 255.<b>255</b>.255.<b>0</b></p>
-      <p>Zapis skrótowy: /24</p>
-      <h4>IPv4</h4>
-      <p>Zapis binarny: 11000000<b>10101000</b>10100101<b>01101110</b></p>
-      <p>Zapis dziesiętny: 192.<b>168</b>.165.<b>110</b></p>
-      <p></p>
-      <h4>Adresy specjalne</h4>
-      <p>0.0.0.0 – adres nieokreślony</p>
-      <p>127.0.0.1 – loopback, adres wskazujący na host lokalny.</p>
-      <p></p>
-      <h4>IPv6</h4>
-      <p>IPv6 (<em>ang. Internet Protocol version 6</em>) – jest to kolejna wersja protokołu IP. Adres IPv6 to <b>128 bitowa</b> liczba zapisana zwykle jako osiem 16-bitowych bloków w systemie heksadecymalnym oddzielonych dwukropkiem.
-      Zapis adresacji IPv6:</p>
-      <p></p>
-      <p>Adresy IPv6 w zapisie binarnym byłyby bardzo nieczytelne dlatego stosuje się szereg zasad dzięki, którym można ułatwić ich odczyt i zapis.</p>
-      <p></p>
-      <p>Można jednokrotnie użyć podwójnego dwukropka wskazującego dowolną liczbę bitów zerowych.</p>
-      Można pominąć wszystkie zera wiodące.</p>
-      Przykładowy adres IPv6 w zapisie binarnym:</p>
-      <p></p>
-      <p>
-      <b>0010000100000001</b>0000000000000000<b>0000000000000000</b>0000000000000000<b>0000000000000000</b>0101110110111100<b>1001010000101100</b>0000010110101111</p>
-      
-      <h4>Przykładowy adres IPv6 w zapisie heksadecymalnym:</h4>
-      
-      <p>2101:0000:0000:0000:0000:5dbc:942c:05af – Zapis pełny: osiem 16-bitowych bloków oddzielonych dwukropkiem (:)</p>
-      
-      <p>2101:0:0:0:0:5dbc:942c:05af – Zapis ze skróconymi blokami zer do jednego znaku</p>
-      
-      <p>2101:0:0::5dbc:942c:05af – Zapis z wykluczeniem dwóch bloków zer za pomocą znaku dwukropka (:)</p>
-      
-      <p>2101::5dbc:942c:05af – Zapis z wykluczeniem 4 bloków zer za pomocą znaku dwukropka (:)</p>
-      
-      <p>2101::5dbc:942c:5af – Zapis z wykluczeniem wszystkich zer wiodących i z wykluczeniem 4 bloków zer za pomocą znaku dwukropka (:)</p>
-      <p></p>
-      <p>Wszystkie powyższe adresy są równoznaczne.</p>
-      
-      <h4>Adresy specjalne</h4>
-      <p>::/128 – adres nieokreślony</p>
-      <p>::1/128 – loopback, adres wskazujący na host lokalny.</p>
-      <p>::ffff:0:0/64 – pula zarezerwowana dla zachowania kompatybilności z protokołem IPv4 pozwalająca wykorzystywać komunikację według protokołu IPv6 w sieci IPv4 (np. ::ffff:192.0.2.128),</p>
-      
-      
-      </article>
-  </div>
-</div>
+
 
 <div id="praktyka">
   <div>
@@ -147,8 +69,42 @@
     <span onclick="slideRight(1)" class="btn"></span>
       <div id="slider">
         <div class="temat">
-          <img class="Miniatura" src="Content/WindowsArticle/WindowsSerwerKartaSieciowa/1.png">
-          <p>1 Kliknij prawym przyciskiem myszy na ikonę sieci</p> 
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Maszyna/1.png">
+          <p>Tworząc nową maszynę wirtualną powinniśmy nadać jej nazwę. Podczas nadawania nazwy VB spróbuje automatycznie ustawić typ systemu oraz wersje w razie błędnego przydzielenia można zrobić to ręcznie. W Machina folder wskazujemy miejsce na dysku gdzie zostanie utworzona nasza maszyna.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Maszyna/2.png">
+          <p>Przydzielamy rozmiar pamięci ram dla maszyny. Aby ustawić najbardziej optymalną wartość należy sprawdzić ile pamięci ram posiada system gospodarza.
+            Możesz to sprawdzić w Menadżerze zadań w zakładce wydajność.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Maszyna/3.png">
+          <p>Aby uzyskać jak najwięcej pamięci RAM dla maszyn wirtualnych (Serwer + Klient) zamknij wszystkie zbędne programy działające w tle. 
+            Możesz też skorzystać z Mem Reduct. Pobierz go z strony <a href="https://www.henrypp.org/product/memreduct">klikając tu</a>
+          ,albo z linku bezpośredniego <a href="https://github.com/henrypp/memreduct/releases/download/v.3.4/memreduct-3.4-setup.exe">klikając tu</a></p>
+          <p>Jak widać po wyczyszczeniu dostępna pamięć na maszyny wirtualne to 5,52GB
+          uzyskany wynik dzielę na pół ponieważ maksymalnie w tym samym czasie będę miał uruchomione dwie maszyny. 
+          Z uzyskanej wartości pozostawiam bufor 320MB dla Windowsa. Wiec każda moja maszyna wirtualna maksymalnie powinna mieć 2,6GB RAM </p>
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Maszyna/4.png">
+          <p>Teraz mamy wybór, tworzyć czy nie tworzyć wirtualny dysk, a może użyć istniejący? Jak widać mi wykrył dysk z Ubuntu server w wersji 18.04. Załóżmy jednak że mamy tabula rasa (z łac. czysta kartka) bo jest to nasz pierwsza maszyna. wiec stwórzmy wizualny dysk.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Maszyna/5.png">
+          <p>Teraz mamy wybór rozszerzenia dla wirtualnego dysku twardego.
+            VDI to natywny dla VirtualBox
+            VHD to natywny dla Hyper-v
+            VMDK to natywny dla VMware
+            VirtualBox`a nie ma problemu z korzystaniem z nienatywnych rozszerzeń natomiast Hyper-v oraz VMware może takowy problem z tym mieć. Co zatem wybrać drugo i trzecia opcja pozwoli na jednoczesne wsparcie w dwóch programach. Pierwsza jest tylko dla VirtualBox`a </p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Maszyna/6.png">
+          <p>No to teraz pytanie Dynamiczny czy statyczny rozmiar dysku. Różnica polega na  tym że statyczny zajmuje stałą przestrzeń na dysku fizycznym a system na nim działający uzyskuje nieco lepsze czasy zapisu i odczytu danych, natomiast odwrotnie jest przy dynamicznym na początku rozmiar jest zaledwie kilka mega potem instalujemy system i plik się powiększa do np.: 6 GB następnie instalujemy pogramy plik ma już 7,2 GB no to teraz odinstalujmy niepotrzebne programy no niestety ale plik dalej ma 7,2 GB. Wniosek dysk dynamiczny się powiększa ale nie zmniejsza.</p> 
+        </div>
+        <div class="temat">
+          <img class="Miniatura" src="Content/VirtualBox/VirtualBox-Maszyna/7.png">
+          <p>Na koniec ustalamy docelową lokalizację dla dysku twardego i docelowy rozmiar.</p> 
         </div>
       
       
@@ -162,20 +118,7 @@
 <div class="separatorBlack"></div>
 
 
-<div id="zadania">
-  <div>
-    <svg class="Chapter" width="100" height="100" viewBox="0 0 24 24" stroke-width=".5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-     
-      <rect x="5" y="3" width="14" height="18" rx="2"></rect>
-      <line x1="9" y1="7" x2="15" y2="7"></line>
-      <line x1="9" y1="11" x2="15" y2="11"></line>
-      <line x1="9" y1="15" x2="13" y2="15"></line>
-   </svg>
-  </div>
-  <article>Zadania
-   
-  </article>
-</div>
+
 <footer>
   <p>Kontakt: so.aso.strona@gmail.com</p>
   <p>Dysk google: <a href="https://drive.google.com/drive/folders/1iat475Zk6U7E1pq3RZjaSxCLEHBTuRRy?usp=sharing">Kliknij tu</a></p>

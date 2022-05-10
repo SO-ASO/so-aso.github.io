@@ -8,6 +8,17 @@ html, body {
 article{
   padding: 15px;
 }
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #707070;
+}
+a:hover{
+  color: #dbdbdb;
+}
+img{
+  image-rendering: -webkit-optimize-contrast;
+}
 
 h1{
   font-size: 2.1rem;
@@ -61,8 +72,6 @@ footer{
 }
 
 footer>p>a{
-  text-decoration:none;
-  cursor: pointer;
   color: #aeaeae;
 }
 footer>p>a:hover{
@@ -186,7 +195,6 @@ svg:hover.imageLink{
 	font-size:14px;
 	font-weight:bold;
 	padding:8px 13px;
-	text-decoration:none;
 	text-shadow:-3px 3px 2px #3d768a;
   margin: 10px;
 }
